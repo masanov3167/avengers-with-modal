@@ -1,0 +1,22 @@
+{
+  "name": "avangers-page-with-carousel-and-modal",
+  "version": "1.0.0",
+  "description": "27-dars",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masanov3167/avengers-with-modal.git"
+  },
+  "author": "masanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masanov3167/avengers-with-modal/issues"
+  },
+  "homepage": "https://github.com/masanov3167/avengers-with-modal#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
