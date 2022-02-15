@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>27-dars | Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="visually-hidden"></h1>
+
+        <h2 class="fw-bolder my-4 text-center">Movies catalog</h2>
+
+        <div class="row">
+            <div class="col">
+                <form>
+                    <input class="form-control" type="text" value="ave">
+                    <input class="form-control my-3" type="text" value="5">
+                    <select class="form-select">
+                        <option selected>All</option>
+                        <option value="fantastic">Fantastic</option>
+                        <option value="comedic">Comedy</option>
+                    </select>
+                    <select class="form-select my-3">
+                        <option selected>Rating (high to low)</option>
+                        <option value="best">Best</option>
+                        <option value="middle">Middle</option>
+                        <option value="not bad">Not bad</option>
+                    </select>
+
+                    <button class="btn btn-primary w-100" type="submit">Search</button>
+                </form>
+
+                <h4 class="fw-bold fs-2 mt-4">Bookmarked movies</h4>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="border p-3 rounded-top">
+                            <p class="fw-bold text-capitalize">Avengers: infinity-war</p>
+                            <div class="btn btn-danger px-2 py-1">remove</div>
+                        </div>
+                        <div class="border p-3">
+                            <p class="fw-bold text-capitalize">The avengers</p>
+                            <div class="btn btn-danger px-2 py-1">remove</div>
+                        </div>
+                        <div class="border p-3 rounded-bottom">
+                            <p class="fw-bold">12 Years a Slave</p>
+                            <div class="btn btn-danger px-2 py-1">remove</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-8">
+                <h4 class="fw-bold">Search results: 39</h4>
+
+                <div class="alert alert-primary text-dark">
+                    Use the form on the left to search for a movie
+                </div>
+
+               <div class="d-flex ">
+                <div class="col">
+                    <div class="card me-3">
+                        <img class="card-img-top" src="https://image.cnbcfm.com/api/v1/image/105172198-Avengers-Infinity-War.jpg?v=1529478136&w=929&h=523" alt="Cinema's image">
+                        <div class="card-body">
+                            <h5 class="fw-bolder text-capitalize">Avengers: infinity-war</h5>
+
+                            <div class="d-flex align-items-end">
+                                <img style="width: 20px; height: 20px;" src="./img/file.png" alt="File">
+
+                                <time class="ms-2">2018</time>
+                            </div>
+
+                            <div class="d-flex align-items-end my-3">
+                                <img style="width: 20px; height: 20px;" src="./img/star.png" alt="star">
+
+                                <time class="ms-2">8.7</time>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                    <div class="border border-primary rounded px-2 py-1 text-primary">watch trailer</div>
+
+                                    <div class="border border-success rounded px-2 py-1 text-success">More info</div>
+
+                                    <div class="border border-secondary rounded px-2 py-1 text-secondary">Bookmark</div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col">
+                    <div class="card ms-3">
+                        <img class="card-img-top" src="https://i.ytimg.com/vi/wGZ9Jl1T2hY/maxresdefault.jpg" alt="Cinema's image">
+                        <div class="card-body">
+                            <h5 class="fw-bolder text-capitalize">the avengers</h5>
+
+                            <div class="d-flex align-items-end">
+                                <img style="width: 20px; height: 20px;" src="./img/file.png" alt="File">
+
+                                <time class="ms-2">2012</time>
+                            </div>
+
+                            <div class="d-flex align-items-end my-3">
+                                <img style="width: 20px; height: 20px;" src="./img/star.png" alt="star">
+
+                                <time class="ms-2">8.1</time>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                    <div class="border border-primary rounded px-2 py-1 text-primary">watch trailer</div>
+
+                                    <div class="border border-success rounded px-2 py-1 text-success">More info</div>
+
+                                    <div class="border border-secondary rounded px-2 py-1 text-secondary">Bookmark</div>
+                            </div>
+                        </div>
+                      </div>
+                 </div>
+               </div>
+
+
+                    <!-- <div class="d-flex mt-5 justify-content-center">
+                        <span class="border rounded-start px-2 py-1">
+                            <a class="text-decoration-none" href="#">1</a>
+                        </span>
+
+                        <span class="border px-2 py-1">
+                            <a class="text-decoration-none" href="#">2</a>
+                        </span>
+
+                        <span class="border px-2 py-1">
+                            <a class="text-decoration-none" href="#">3</a>
+                        </span>
+
+                        <span class="border rounded-end px-2 py-1">
+                            <a class="text-decoration-none" href="#">4</a>
+                        </span>
+                    </div> -->
+
+                    <div class="d-flex justify-content-center mt-5">
+                        <nav>
+                            <ul class="pagination">
+                              <li class="page-item active"><span class="page-link">1</span></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            </ul>
+                          </nav>
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
